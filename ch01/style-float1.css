@@ -1,0 +1,38 @@
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+footer,
+header {
+  height: 20vh;
+  background-color: aqua;
+  clear: both; /* #1 */
+
+}
+
+main {
+  width: 100%;
+  height: 60vh;
+}
+
+article {
+  float: left;
+  width: 20vw;
+  height: 60vh;
+  background-color: bisque;
+}
+
+aside {
+  width: 80vw; /* #2 */
+  height: 60vh;
+  background-color: blue;
+  float: left; /* #3 */
+}
+
+.test {
+  float: left;
+}

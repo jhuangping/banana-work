@@ -1,28 +1,37 @@
 *{box-sizing: border-box;}
 body{
-    margin: 0;
+  margin: 0;
+  /* reset 可以上網找 css reset 使用 */
+  padding: 0;
 }
-#main{
-    display: flex;
-    min-height: 60vh;
+main,
+.main {
+  display: flex;
+  min-height: 60vh;
 
 }
-#main>article{
-    flex:1
+.main>article{
+  flex-basis: 60vw;
+  /* 
+  flex
+  是縮寫，裡面依序包含三個屬性 flex-grow、flex-shrink 和 flex-basis
+  
+  flex: <grow> <shrink> <basis>
+    */
 }
-#main>aside{
-    flex: 0 0 20vw;
-    background-color: aqua;
+.main>aside{
+  flex-basis: 20vw;
+  background-color: aqua;
 }
-#main>nav{
-    flex: 0 0 20VW;
-    background-color: aqua;
-    order: -1;
+.main>nav{
+  flex-basis: 20vw; /* 單位大小寫要一致 */
+  background-color: aqua;
+  /* order: -1; */
 }
 header,footer,article,nav,aside{
-    padding: 1em;
+  padding: 1em;
 }
 header,footer{
-    background-color: beige;
-    height: 20vh;
+  background-color: beige;
+  height: 20vh;
 }
