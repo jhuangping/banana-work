@@ -1,0 +1,21 @@
+*{box-sizing: border-box;}
+body{margin: 0;}
+#main{
+    display: flex;
+    min-height: 60vh;
+}
+#main>article{
+    flex:1;
+}
+nav{
+    order: -1;
+    flex:0 0 20vw;
+    background-color: aqua;
+}
+header,footer{
+    background-color: bisque;
+    height: 20vh;
+}
+header,footer,nav,article{
+    padding: 1em;
+}

@@ -1,0 +1,28 @@
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+}
+#main{
+    display: flex;
+    min-height: 60vh;
+
+}
+#main>article{
+    flex:1
+}
+#main>aside{
+    flex: 0 0 20vw;
+    background-color: aqua;
+}
+#main>nav{
+    flex: 0 0 20VW;
+    background-color: aqua;
+    order: -1;
+}
+header,footer,article,nav,aside{
+    padding: 1em;
+}
+header,footer{
+    background-color: beige;
+    height: 20vh;
+}
