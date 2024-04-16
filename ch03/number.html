@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+    }
+
+    .main__item {
+      width: calc((100% - 4px)/3);
+      background: rgba(255, 0, 0, .2);
+    }
+
+    .main__item::before {
+      content: '';
+      display: block;
+      padding-top: 10%;
+    }
+
+    /* 
+      1. 偶數的item的背景為綠色
+      2. 奇數的item的背景為紅色
+      3. 每三列item的背景為藍色
+    */
+  </style>
+</head>
+<body>
+  <div class="q1">
+    <main class="main">
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item">6</div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+    </main>
+    <main class="main">
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item">6</div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+    </main>
+  </div>
+  <hr>
+  <div class="q2">
+    <main class="main">
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item">6</div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+      <div class="main__item"></div>
+    </main>
+  </div>
+</body>
+</html>
