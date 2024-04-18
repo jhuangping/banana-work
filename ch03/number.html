@@ -21,7 +21,15 @@
       display: block;
       padding-top: 10%;
     }
-
+    .q1 .main :nth-child( even ) {
+      background-color : green ;
+    }
+    .q3 .main :nth-child( odd ){
+      background-color : red ;
+    }
+    .q2 .main :nth-child(-n+3){
+      background-color: blue;
+    }
     /* 
       1. 偶數的item的背景為綠色
       2. 奇數的item的背景為紅色
@@ -42,6 +50,8 @@
       <div class="main__item"></div>
       <div class="main__item"></div>
     </main>
+  </div>
+  <div class="q3">
     <main class="main">
       <div class="main__item"></div>
       <div class="main__item"></div>
