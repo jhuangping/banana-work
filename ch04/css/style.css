@@ -128,11 +128,17 @@ header {
 .menu__item {
   position: relative;
 }
-
+.menu__item:hover .dropdown {
+  opacity: 1;
+  top: 100%;
+}
 .menu__link {
   display: block;
   transition: all 0.5s;
   padding: 20px;
+}
+.menu__link:hover {
+  background: #ededed;
 }
 
 .dropdown {
@@ -153,3 +159,6 @@ header {
 .dropdown__item:not(:last-child) {
   margin-bottom: 8px;
 }
+.dropdown__link:hover {
+  color: #ccc;
+}/*# sourceMappingURL=style.css.map */
