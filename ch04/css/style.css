@@ -143,13 +143,37 @@ header {
   top: calc(100% - 5px);
   left: 50%;
   transform: translateX(-50%);
+  /* 上面這個值好像是控制我的框應該出現在哪裡
+  還有分成XYZ軸 也可以控制旋轉角度 */
   background: #fff;
   border: 1px solid #ededed;
   border-radius: 0 0 8px 8px;
   padding: 10px 15px;
-  transition: all 0.5s;
+  transition: 1s ease-out ;
+  /* 我有稍微注意到每當我重新整理之後網頁跳轉的時候所有東西都看起來像是縮小之後再放大 
+  這個元素基本上是讓過場更柔和 這是我的理解 */
   opacity: 0;
+  pointer-events: none;
 }
 .dropdown__item:not(:last-child) {
   margin-bottom: 8px;
 }
+.menu__item:hover .dropdown {
+  opacity: 1;
+  pointer-events: stroke;
+  /* 這個範例上面好像fill、stroke、all都可以成立，但all的說明我看不懂 */
+  transition: 1s ease-in-out;
+  
+  
+}
+.menu__item:hover {
+  background-color: rgb(198, 195, 195);
+}
+.dropdown__item:hover {
+  color: rgb(187, 187, 187);
+}
+/* @keyframes mymove {
+  from {top:100px;opacity:100;}
+  to {top:50px;opacity:0;}
+} */
+/* 上面的代碼是我在網路上面找的向上浮動消失的代碼 只是使用過後效果有點奇怪 */
